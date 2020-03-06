@@ -1,0 +1,19 @@
+.container-fluid > * {
+    margin-top: 4px;
+}
+
+ul {
+    background-color:  transparent;
+    margin: 20px 0px 0px 1.2%;
+}
+
+p {
+    color: rgb(0, 0, 255);
+    font-size: 12px;
+}
+
+p:hover {
+    color: rgb(103, 80, 231);
+    text-decoration: underline;
+    cursor: pointer;
+}

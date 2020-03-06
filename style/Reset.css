@@ -1,0 +1,12 @@
+.container-fluid > * {
+    margin-top: 4px;
+}
+
+.container-fluid > div > * {
+    margin-top: 4px;
+}
+
+ul {
+    background-color:  transparent;
+    margin: 20px 0px 0px 1.2%;
+}
