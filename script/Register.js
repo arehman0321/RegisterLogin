@@ -63,7 +63,7 @@ d('.register').addEventListener('click', () =>
         
                     // console.log( `Data Made: ${ JSON.parse( localStorage.getItem( 'list') ) }` );
         
-                    window.location.replace( '/Users/ar786/Desktop/R_L/views/Login.html' );
+                    window.location.replace( '/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html' );
 
                 }
                 else
@@ -122,7 +122,7 @@ d('.register').addEventListener('click', () =>
 
                         error(``);
 
-                        window.location.replace( '/Users/ar786/Desktop/R_L/views/Login.html' );
+                        window.location.replace( '/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html' );
 
                     }
                     else
@@ -143,6 +143,6 @@ d('.register').addEventListener('click', () =>
 
 d('.login').addEventListener('click', () => {
 
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/Login.html' );
+    window.location.replace( '/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html' );
 
 });
