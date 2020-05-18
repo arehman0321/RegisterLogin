@@ -40,102 +40,111 @@ d('.register').addEventListener('click', () =>
             pass: pass
         };
 
-        if(localStorage.length === 0)
-        {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(info.email) === false)
 
-            obj = { accounts:[] };
+            error(`<li>Email is invalid</li>`);
 
-            if( pass.length < 8 )
-            {
-
-                error(`<li>Password is too short</li>`);
-
-            }
-            else
-            {
-
-                if( pass === cpass )
-                {
-
-                    obj.accounts.push( info );
-
-                    localStorage.setItem( 'list', JSON.stringify( obj ) );
-        
-                    // console.log( `Data Made: ${ JSON.parse( localStorage.getItem( 'list') ) }` );
-        
-                    window.location.replace( '/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html' );
-
-                }
-                else
-                {
-
-                    error(`<li>Password does not match</li>`);
-
-                }
-
-            }
-
-        }
         else
         {
 
-            obj = JSON.parse( localStorage.getItem( 'list' ) );
-
-            obj.accounts.forEach( ( v ) => {
-
-                if( info.email === v.email )
-                {
-                    valid = false;
-                }
-
-            });
-
-            if( valid === false )
+            if(localStorage.length === 0)
             {
 
-                error(`<li>An acocunt with this email already exists.\nPlease try logging in or reset password.</li>`);
-                valid = true;
-
-            }
-            else
-            {
+                obj = { accounts:[] };
 
                 if( pass.length < 8 )
                 {
 
-                    error(`<li>The password is too short.</li>`);
+                    error(`<li>Password is too short</li>`);
 
                 }
                 else
                 {
-
-                    if( pass === cpass)
+                    
+                    if( pass === cpass )
                     {
 
-                        localStorage.clear( 'list' );
-
                         obj.accounts.push( info );
-                        
-                        obj = localStorage.setItem( 'list', JSON.stringify( obj ) );
-                        
-                        console.log(`Data Exists: ${obj}`);
 
-                        error(``);
-
-                        window.location.replace( '/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html' );
+                        localStorage.setItem( 'list', JSON.stringify( obj ) );
+            
+                        // console.log( `Data Made: ${ JSON.parse( localStorage.getItem( 'list') ) }` );
+            
+                        window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
 
                     }
                     else
                     {
 
-                        error(`<li>The password does not match.</li>`);
+                        error(`<li>Password does not match</li>`);
 
                     }
 
                 }
 
             }
-            
+            else
+            {
+
+                obj = JSON.parse( localStorage.getItem( 'list' ) );
+
+                obj.accounts.forEach( ( v ) => {
+
+                    if( info.email === v.email )
+                    {
+                        valid = false;
+                    }
+
+                });
+
+                if( valid === false )
+                {
+
+                    error(`<li>An acocunt with this email already exists.\nPlease try logging in or reset password.</li>`);
+                    valid = true;
+
+                }
+                else
+                {
+
+                    if( pass.length < 8 )
+                    {
+
+                        error(`<li>The password is too short.</li>`);
+
+                    }
+                    else
+                    {
+
+                        if( pass === cpass)
+                        {
+
+                            localStorage.clear( 'list' );
+
+                            obj.accounts.push( info );
+                            
+                            obj = localStorage.setItem( 'list', JSON.stringify( obj ) );
+                            
+                            console.log(`Data Exists: ${obj}`);
+
+                            error(``);
+
+                            window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
+
+                        }
+                        else
+                        {
+
+                            error(`<li>The password does not match.</li>`);
+
+                        }
+
+                    }
+
+                }
+                
+            }
+
         }
 
     }
@@ -143,6 +152,6 @@ d('.register').addEventListener('click', () =>
 
 d('.login').addEventListener('click', () => {
 
-    window.location.replace( '/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
 
 });

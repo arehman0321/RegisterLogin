@@ -89,7 +89,7 @@ d('.two').addEventListener('click', () => {
 
             localStorage.setItem( 'list', JSON.stringify( obj ) );
 
-            window.location.replace( '/Users/ar786/Desktop/R_L/views/Login.html' );
+            window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
 
         }
         else
@@ -107,7 +107,7 @@ d('.back').addEventListener('click', () => {
 
     num = null;
     valid = false;
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/Reset.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/reset.html' );
 
 });
 
@@ -115,7 +115,7 @@ d('.login').addEventListener('click', () => {
 
     num = null;
     valid = false;
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/Login.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
     
 });
 
@@ -123,6 +123,6 @@ d('.register').addEventListener('click', () => {
 
     num = null;
     valid = false;
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/Register.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/register.html' );
     
 });

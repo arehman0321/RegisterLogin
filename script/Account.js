@@ -15,7 +15,7 @@ if( obj === null )
     
     d('.login').addEventListener('click', () => {
 
-        window.location.replace(`/Users/ar786/Documents/GitHub/Register_Login/R_L/views/Login.html`);
+        window.location.replace(`/Users/ar786/Desktop/R_L/views/login.html`);
 
     });
 

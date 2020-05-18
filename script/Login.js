@@ -67,7 +67,7 @@ d('.login').addEventListener('click', () => {
                 Evalid = false,
                 Pvalid = false,
                 num;
-                window.location.replace( '/Users/ar786/Desktop/R_L/views/Account.html' );
+                window.location.replace( '/Users/ar786/Desktop/R_L/views/account.html' );
         
             }
             else if( Pvalid === false && Evalid === true)
@@ -94,7 +94,7 @@ d('.reset').addEventListener('click', () => {
     Evalid = false,
     Pvalid = false,
     num;
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/Reset.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/reset.html' );
 
 });
 
@@ -106,6 +106,6 @@ d('.register').addEventListener('click', () => {
     Evalid = false,
     Pvalid = false,
     num;
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/Register.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/register.html' );
 
 });
