@@ -89,7 +89,7 @@ d('.two').addEventListener('click', () => {
 
             localStorage.setItem( 'list', JSON.stringify( obj ) );
 
-            window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
+            window.location.replace( '/Users/ar786/Desktop/R_L/views/index.html' );
 
         }
         else
@@ -115,7 +115,7 @@ d('.login').addEventListener('click', () => {
 
     num = null;
     valid = false;
-    window.location.replace( '/Users/ar786/Desktop/R_L/views/login.html' );
+    window.location.replace( '/Users/ar786/Desktop/R_L/views/index.html' );
     
 });
 
